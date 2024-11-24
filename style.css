@@ -1,42 +1,39 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 88px;
   background-color: rgb(250 245 236);
   font-family: Arial, sans-serif;  
 }
 
 #navbar {
-  width: auto;
+  width: 100%;
   height: 68px;
   padding: 10px 20px;
   display: flex;
-  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  left: 0;
+z-index: 1000; /* Ensure it stays above other content */
   justify-content: space-around;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  background-color: rgb(255 239 223 / 89%);
+  background-color: rgb(255 239 223);
 }
 
 #logo img {
   width: 10rem;
   height: 4rem;
-  /* margin-left: -60px; */
 }
 
 .nav-links {
   list-style-type: none;
-  /* margin: 0; */
   padding: 0;
   display: flex;
   gap: 20px;
 }
 
-.nav-links li {
-  /* position: relative; */
-}
-
 .nav-links a {
   text-decoration: none;
-  color: #3e3838; /* Dark text */
+  color: #3e3838;
   font-size: 16px;
   padding: 5px 0;
   transition: color 0.3s ease;
@@ -45,7 +42,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #e3762b; /* Highlight orange on hover */
+  color: #e3762b; 
 }
 
 .arrow {
@@ -53,21 +50,13 @@ body {
   font-size: 14px;
   color: #e3762b;
   margin-left: 10px;
-  /* margin-bottom: 0px; */
-  /* width: 6px; */
-  /* height: 6px; */
-  /* transform: rotate(45deg); Create downward caret */
-  /* border-right: 2px solid #e3762b; Right border of arrow */
-  /* border-bottom: 2px solid #e3762b; Bottom border of arrow */
 }
 
-/* Optional Spacing Between Links */
 .nav-links li + li {
-  border-left: 1px solid #472222; /* Separator between items */
+  border-left: 1px solid #472222; 
   padding-left: 20px;
 }
 
-/* Container for buttons */
 .buttons {
   display: flex;
   gap: 20px;
@@ -80,41 +69,36 @@ body {
   align-items: center;
   font-family: Arial, sans-serif;
   font-size: 18px;
-  font-weight: 500; /* Bold text */
-  padding: 10px 20px; /* Spacing inside the button */
-  border: 1px solid #e66814; /* No border */
-  border-radius: 30px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  cursor: pointer; /* Pointer cursor */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-weight: 500; 
+  padding: 10px 20px; 
+  border: 1px solid #e66814;
+  border-radius: 30px; 
+  text-decoration: none; 
+  cursor: pointer; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Specific Styles for Book Appointment */
 .book-appointment {
   background-color: #e3762b;
   color: white;
 }
 
-/* Specific Styles for Help Button */
 .help-button {
   color: #3e3838;
   padding-inline: 10px 15px;
 }
 
-/* Icon Styling */
 .book-appointmenti,
 .help-button i {
   margin-right: 10px;
 }
 
-/* Dropdown Arrow Styling */
 .help-button i.fa-chevron-down {
-  margin-left: 5px; /* Space before the dropdown arrow */
-  font-size: 16px; /* Smaller size for the dropdown arrow */
+  margin-left: 5px; 
+  font-size: 16px; 
 }
 
-/* Hover Effects */
 .book-appointment:hover {
   background-color: #cc5f1e;
   transform: scale(1.05);
@@ -124,7 +108,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Header */
 header img {
   width: 100%;
   height: 79vh;
@@ -132,7 +115,6 @@ header img {
 
 .headerBase {
   width: 90%;
-  /* margin: 60px 100px 60px 100px; */
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
@@ -150,11 +132,7 @@ header img {
 }
 
 .googleContainer {
-  /* width: 30%; */
   display: flex;
-  /* margin-left: 100px; */
-  /* color: #311111; */
-  /* font-size: 1.2rem; */
 }
 
 .lakh {
@@ -194,29 +172,24 @@ header img {
   margin: 20px 0;
 }
 
-/* Input Box Styling */
 .input-box {
   width: 100%;
-  /* display: block; */
-  /* align-items: center; */
   padding: 15px;
   font-size: 16px;
   border: 2px solid lightgray;
   color: #666;
   border-radius: 30px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none; 
   cursor: pointer;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   background-color: rgb(250 245 236);
 }
 
 .input-box:focus,
 .input-box:hover {
   border-color: #e3762b;
-  box-shadow: 0 0 6px rgba(227, 118, 43, 0.5); /* Add glowing shadow */
+  box-shadow: 0 0 6px rgba(227, 118, 43, 0.5);
 }
 
-/* Dropdown Icon Styling */
 .dropdown-icon {
   position: absolute;
   right: -10px;
@@ -225,22 +198,19 @@ header img {
   transform: translateY(-50%);
   font-size: 14px;
   color: #e3762b;
-  pointer-events: none; /* Make the icon unclickable */
+  pointer-events: none; 
 }
 
 .citySelectorBtn {
   width: 114%;
-  /* display: block; */
-  /* align-items: center; */
   padding: 15px;
   margin-top: 20px;
   font-size: 16px;
   border: 1px solid #e66814;
   color: white;
   border-radius: 30px;
-  outline: none; /* Remove blue outline on focus */
+  outline: none; 
   cursor: pointer;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   background-color:#e3762b;
 }
 
@@ -249,11 +219,8 @@ header img {
   height: auto;
   margin: 0 auto;
   padding: 50px;
-  /* display: flex; */
-  /* justify-content: center; */
   border-radius: 30px;
   background-color: rgba(245, 230, 250, 0.89);
-  /* background-color: red; */
 }
 
 .headline {
@@ -265,19 +232,10 @@ header img {
   text-align: center;
 }
 
-/* .teeth{
-  list-style: none;
-  display: flex;
-} */
-
-
-/* Container */
 .container {
   padding: 20px;
 }
 
-
-/* Grid Styling */
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -292,8 +250,6 @@ header img {
   width: 110px;
   height: 100px;
   padding: 30px;
-  /* padding-top: 0px; */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   text-align: center;
 }
 
@@ -301,8 +257,6 @@ header img {
   font-size: 40px;
   color: #260e0e;
   margin-bottom: 10px;
-  /* width: 40px; */
-  /* height: 40px; */
 }
 
 .teeth p {
@@ -312,7 +266,6 @@ header img {
   font-weight: 500;
 }
 
-/* Explore Button Styling */
 .explore-btn {
   color: #472222;
   font-size: 16px;
@@ -325,11 +278,12 @@ header img {
 }
 
 
-/* Media Queries */
-/* Default styles are already designed for larger screens (computers). */
-
-/* For tablets (768px to 1024px width) */
+/* Media query For tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
+  body{
+    margin-top: 368px;
+  }
+  
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -350,7 +304,7 @@ header img {
   }
 
   header img {
-    height: 60vh; /* Adjust header image height */
+    height: 60vh; 
   }
 
   .headerBase {
@@ -390,10 +344,15 @@ header img {
   }
 }
 
-/* For mobile phones (max 767px width) */
+/* For mobile phones */
 @media (max-width: 767px) {
+  body{
+    margin-top: 286px;
+  }
+
   #navbar {
     flex-direction: column;
+    height: auto;
     padding: 10px;
     gap: 10px;
   }
@@ -405,7 +364,7 @@ header img {
   }
 
   header img {
-    height: 40vh; /* Adjust header image height for smaller screens */
+    height: 40vh; 
   }
 
   .headerBase {
@@ -467,26 +426,5 @@ header img {
   .explore-btn {
     font-size: 12px;
     padding: 8px;
-  }
-}
-
-/* Small mobile phones (max 480px width) */
-@media (max-width: 480px) {
-  .buttons {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .citySelector {
-    text-align: center;
-    padding: 0;
-  }
-
-  .grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column layout */
-  }
-
-  .headline {
-    font-size: 1.2rem;
   }
 }
