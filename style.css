@@ -3,7 +3,7 @@ body {
   padding: 0;
   padding-top: 88px;
   background-color: rgb(250 245 236);
-  font-family: Arial, sans-serif;  
+  font-family: Arial, sans-serif;
 }
 
 #navbar {
@@ -14,7 +14,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; 
+  z-index: 1000; /* Ensure it stays above other content */
   justify-content: space-around;
   background-color: rgb(255 239 223);
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #e3762b; 
+  color: #e3762b;
 }
 
 .arrow {
@@ -53,7 +53,7 @@ body {
 }
 
 .nav-links li + li {
-  border-left: 1px solid #472222; 
+  border-left: 1px solid #472222;
   padding-left: 20px;
 }
 
@@ -69,13 +69,13 @@ body {
   align-items: center;
   font-family: Arial, sans-serif;
   font-size: 18px;
-  font-weight: 500; 
-  padding: 10px 20px; 
+  font-weight: 500;
+  padding: 10px 20px;
   border: 1px solid #e66814;
-  border-radius: 30px; 
-  text-decoration: none; 
-  cursor: pointer; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -95,8 +95,8 @@ body {
 }
 
 .help-button i.fa-chevron-down {
-  margin-left: 5px; 
-  font-size: 16px; 
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .book-appointment:hover {
@@ -179,7 +179,7 @@ header img {
   border: 2px solid lightgray;
   color: #666;
   border-radius: 30px;
-  outline: none; 
+  outline: none;
   cursor: pointer;
   background-color: rgb(250 245 236);
 }
@@ -198,7 +198,7 @@ header img {
   transform: translateY(-50%);
   font-size: 14px;
   color: #e3762b;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .citySelectorBtn {
@@ -209,12 +209,12 @@ header img {
   border: 1px solid #e66814;
   color: white;
   border-radius: 30px;
-  outline: none; 
+  outline: none;
   cursor: pointer;
-  background-color:#e3762b;
+  background-color: #e3762b;
 }
 
-.dentalTreatments{
+.dentalTreatments {
   width: 80vw;
   height: auto;
   margin: 0 auto;
@@ -253,7 +253,7 @@ header img {
   text-align: center;
 }
 
-.teeth i{
+.teeth i {
   font-size: 40px;
   color: #260e0e;
   margin-bottom: 10px;
@@ -277,13 +277,12 @@ header img {
   align-items: center;
 }
 
-
 /* Media query For tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
-  body{
+  body {
     margin-top: 368px;
   }
-  
+
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -304,7 +303,7 @@ header img {
   }
 
   header img {
-    height: 60vh; 
+    height: 60vh;
   }
 
   .headerBase {
@@ -316,6 +315,12 @@ header img {
 
   .citySelector {
     width: 100%;
+  }
+
+  .citySelectorBtn {
+    width: 105%;
+    padding: 13px;
+    margin-left: 0;
   }
 
   .dentalTreatments {
@@ -346,7 +351,7 @@ header img {
 
 /* For mobile phones */
 @media (max-width: 767px) {
-  body{
+  body {
     margin-top: 286px;
   }
 
@@ -363,8 +368,13 @@ header img {
     gap: 10px;
   }
 
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
   header img {
-    height: 40vh; 
+    height: 40vh;
   }
 
   .headerBase {
@@ -388,11 +398,13 @@ header img {
   .citySelector {
     width: 100%;
     padding: 0;
+    margin-left: 0;
   }
 
   .citySelectorBtn {
-    width: 100%;
-    padding: 10px;
+    width: 108%;
+    padding: 13px;
+    margin-left: 0;
   }
 
   .dentalTreatments {
@@ -405,7 +417,7 @@ header img {
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
 
